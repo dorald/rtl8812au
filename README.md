@@ -1,3 +1,34 @@
+
+##Arch Linux installation:
+------------------------------------
+$ make
+$ sudo make install
+
+------------------------------------
+#To use dkms
+------------------------------------
+
+
+(as root, or sudo) copy source folder contents to /usr/src/rtl8812au-5.3.4
+
+--------------------------------------------------------------------------
+
+$ sudo dkms add -m rtl8812au -v 5.3.4
+
+$ sudo dkms build -m rtl8812au -v 5.3.4
+
+$ sudo dkms install -m rtl8812au -v 5.3.4
+
+
+---------------------------------------------------------------------
+#To use dkms uninstall and remove:
+-----------------------------------------------------
+
+
+$ sudo dkms remove -m rtl8812au -v 5.2.20 --all
+
+--------------------------------------------------
+
 ## RTL8812AU/21AU and RTL8814AU drivers
 ### Supports Realtek 8811, 8812, 8814 and 8821 chipsets
 
